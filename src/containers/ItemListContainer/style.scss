@@ -1,0 +1,8 @@
+.item-list-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
