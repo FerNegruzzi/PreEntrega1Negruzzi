@@ -28,7 +28,7 @@ const ItemListContainer = ({greeting}) => {
                     alert("Oh no! Hubo un error.")
                     console.log(err);
                 });
-            }, 3000);
+            }, 2000);
             
     }, [categoryId])
     return (
