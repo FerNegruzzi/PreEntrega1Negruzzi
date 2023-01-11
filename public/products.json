@@ -1,0 +1,163 @@
+[
+    {
+        "id": 1,
+        "title": "Snake Table",
+        "price": 80.95,
+        "description": "Your perfect deck to skate",
+        "category": "skate table",
+        "image": "/products_img/skate_1.jpg"
+    },
+
+    {
+        "id": 2,
+        "title": "Skeleton Table",
+        "price": 78.95,
+        "description": "Your perfect deck to skate",
+        "category": "skate table",
+        "image": "/products_img/skate_2.jpg"
+    },
+    
+
+    {
+        "id": 3,
+        "title": "Illuminati Table",
+        "price": 100.99,
+        "description": "Your perfect ILLUMINATI deck to skate",
+        "category": "skate table",
+        "image": "/products_img/skate_3.jpg"
+    },
+    
+
+    {
+        "id": 4,
+        "title": "Mexican Table",
+        "price": 82.75,
+        "description": "Your perfect deck to skate",
+        "category": "skate table",
+        "image": "/products_img/skate_4.jpg"
+    },
+    
+
+    {
+        "id": 5,
+        "title": "Green Truck",
+        "price": 52.75,
+        "description": "Your perfect truck to skate",
+        "category": "trucks",
+        "image": "/products_img/trucks_1.jpg"
+    },
+
+
+    {
+        "id": 6,
+        "title": "Toy Machine Truck",
+        "price": 59.75,
+        "description": "Your perfect truck to skate",
+        "category": "trucks",
+        "image": "/products_img/trucks_2.jpg"
+    },
+
+
+    {
+        "id": 7,
+        "title": "Classic Truck",
+        "price": 48.75,
+        "description": "Your perfect truck to skate",
+        "category": "trucks",
+        "image": "/products_img/trucks_3.jpg"
+    },
+
+
+    {
+        "id": 8,
+        "title": "Golden Truck",
+        "price": 62.75,
+        "description": "Your perfect truck to skate",
+        "category": "trucks",
+        "image": "/products_img/trucks_4.jpg"
+    },
+
+
+    {
+        "id": 9,
+        "title": "Light Blue Wheel",
+        "price": 32.75,
+        "description": "Your perfects wheels to skate",
+        "category": "ruedas",
+        "image": "/products_img/rueda_1.jpg"
+    },
+
+
+    {
+        "id": 10,
+        "title": "Red&Blue Wheel",
+        "price": 35.75,
+        "description": "Your perfects wheels to skate",
+        "category": "ruedas",
+        "image": "/products_img/rueda_2.jpg"
+    },
+
+
+    {
+        "id": 11,
+        "title": "Yellow&Red Wheel",
+        "price": 33.75,
+        "description": "Your perfects wheels to skate",
+        "category": "ruedas",
+        "image": "/products_img/rueda_3.jpg"
+    },
+
+
+    {
+        "id": 12,
+        "title": "White&Blue Wheel",
+        "price": 34.75,
+        "description": "Your perfects wheels to skate",
+        "category": "ruedas",
+        "image": "/products_img/rueda_4.jpg"
+    },
+
+
+    {
+        "id": 13,
+        "title": "Blue Jacket",
+        "price": 62.75,
+        "description": "Beautiful jacket",
+        "category": "indumentaria",
+        "image": "/products_img/buzo_1.jpg"
+    },
+
+
+    {
+        "id": 14,
+        "title": "Grey Jacket",
+        "price": 52.75,
+        "description": "Beautiful jacket",
+        "category": "indumentaria",
+        "image": "/products_img/buzo_2.jpg"
+    },
+
+
+    {
+        "id": 15,
+        "title": "Black 'no hat' Jacket",
+        "price": 46.75,
+        "description": "Beautiful jacket",
+        "category": "indumentaria",
+        "image": "/products_img/buzo_3.jpg"
+    },
+
+
+    {
+        "id": 16,
+        "title": "Black Thrasher Jacket",
+        "price": 72.75,
+        "description": "Beautiful jacket",
+        "category": "indumentaria",
+        "image": "/products_img/buzo_4.jpg"
+    }
+
+
+
+    
+]
