@@ -8,16 +8,17 @@ const ItemDetailContainer = () => {
 
   const {id} = useParams()
   useEffect(()=> {
-    fetch("/productos.json")
+    fetch("../products.json")
       .then(response => {
         return response.json()
       })
       .then(product => {
-        const productDetailId = product.find(producto => producto.id == id)
+        const productDetailId = product.find(producto => producto.id === parseInt(id))
         setDetail(productDetailId)
       })
       .catch((err) => {
         alert("Oh no! Hubo un error.")
+        console.log(err);
       });
 
   }, [id])

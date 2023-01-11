@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import ItemDetailContainer from './containers/ItemListContainer';
+import ItemDetailContainer from './containers/ItemDetailContainer';
 import ItemListContainer from './containers/ItemListContainer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Cart from './containers/CartContainer';
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
