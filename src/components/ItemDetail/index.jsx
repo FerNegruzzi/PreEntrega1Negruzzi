@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { Shop } from "../../context/ShopProvider";
-import ItemCount from "../ItemCounter";
+import ItemCount from "../ItemCount";
 import "./style.scss";
 
 const ItemDetail = ({ detail }) => {
@@ -11,7 +11,7 @@ const ItemDetail = ({ detail }) => {
     const {addProduct} = useContext(Shop)
 
     const onAdd = (cantidad) => {
-        console.log(`se agrego una cantidad de productos: ${cantidad}`)
+        console.log(cantidad);
         setQuantity(cantidad)
         addProduct({...detail,quantity: cantidad})
     }

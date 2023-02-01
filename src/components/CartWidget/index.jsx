@@ -7,10 +7,12 @@ const CartWidget = () => {
 
   const {countCart} = useContext(Shop)
 
+  console.log(countCart);
+
   return (
     <>
     <HiShoppingCart size={'2em'}/>
-    <span>{countCart.length}</span>
+    <span>{countCart()}</span>
     </>
   )
 }

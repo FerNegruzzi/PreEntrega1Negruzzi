@@ -6,17 +6,16 @@ export const Shop = createContext()
 const ShopProvider = ({children}) => {
 
     const [products, setProducts] = useState([])
-
+        
     const addProduct = (product) => {
         const isInCart = isProductInCart(product.id)
         if (isInCart) {
             const productoRepetido = products.find(element => element.id === product.id)
             productoRepetido.quantity += product.quantity
             setProducts([...products])
-        }else{
+        } else {
             setProducts([...products, product])
         }
-        setProducts([...products, product])
     }
 
     const countCart = () => {
@@ -27,12 +26,30 @@ const ShopProvider = ({children}) => {
         return cantidadTotal
     }
 
+    
     const isProductInCart = (id) => {
         return products.some(product => product.id === id)
     }
 
+    const total = () => {
+        let total = 0;
+        for (const product of products) {
+            total += product.price * product.quantity
+        }
+        return total;
+    }
+
+    const cleanCart = () => {
+        setProducts([])
+    }
+
+    const removeProduct = (id) => {
+        const productsFiltered = products.filter(product => product.id !== id);
+        setProducts(productsFiltered)
+    }
+     
     return (
-        <Shop.Provider value={{products, addProduct, countCart}}>
+        <Shop.Provider value = {{products, addProduct, countCart, total, cleanCart, removeProduct}}>
             {children}
         </Shop.Provider>
     )

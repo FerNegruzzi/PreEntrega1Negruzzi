@@ -1,45 +1,25 @@
-import React, { useEffect, useState} from 'react'
+import React from 'react'
 import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
+import useFirebase from '../../hooks/useFirebase';
 
-const ItemListContainer = ({greeting}) => {
-    
-    const [products, setProducts] = useState({})
+const ItemListContainer = () => {
 
-    const {categoryId} = useParams()
-    console.log(categoryId);
+    const { categoryId } = useParams()
 
-    useEffect(()=> {
-        setTimeout(() => {
-            fetch("/products.json")
-                .then(response => {
-                    return response.json()
-                })
-                .then(products => {
-                    if (categoryId) {
-                        const productosFiltradosPorCategoria = products.filter(producto => producto.category === categoryId)
-                        console.log(productosFiltradosPorCategoria)
-                        setProducts(productosFiltradosPorCategoria)
-                    } else {
-                        setProducts(products)
-                    }
-                })
-                .catch((err) => {
-                    alert("Oh no! Hubo un error.")
-                    console.log(err);
-                });
-            }, 2000);
-            
-    }, [categoryId])
+    const [products, loading, error] = useFirebase(categoryId)
+
+    console.log(products);
+
     return (
-        <div>
-            {
-                Object.keys(products).length === 0
-                ? <h2>Loading...</h2>
+        <>
+        {error && <h1>Ups... Hubo un error: {error}</h1>}
+        {
+            loading ? 
+                <h1>Loading...</h1>
                 : <ItemList productos={products}/>
-                
-            }
-        </div>
+        }
+        </>
     )
 }
 
