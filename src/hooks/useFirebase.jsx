@@ -4,7 +4,7 @@ import { db } from '../firebase/config'
 
 const useFirebase = (categoryId) => {
 
-    const [products, setProducts] = useState({})
+    const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState("")
 

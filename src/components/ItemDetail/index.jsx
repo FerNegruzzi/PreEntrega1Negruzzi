@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import { Shop } from "../../context/ShopProvider";
 import ItemCount from "../ItemCount";
 import "./style.scss";
+import { HiShoppingCart } from "react-icons/hi";
 
 const ItemDetail = ({ detail }) => {
 
     const [quantity, setQuantity] = useState(0)
 
-    const {addProduct} = useContext(Shop)
+    const { addProduct } = useContext(Shop)
 
     const onAdd = (cantidad) => {
-        console.log(cantidad);
         setQuantity(cantidad)
-        addProduct({...detail,quantity: cantidad})
+        addProduct({ ...detail, quantity: cantidad })
     }
 
     return (
@@ -25,17 +25,17 @@ const ItemDetail = ({ detail }) => {
                 <p>{detail.price}</p>
                 {
                     quantity === 0 ?
-                    <ItemCount 
-                        stock={detail.stock} 
-                        initial={1} 
-                        onAdd={onAdd}    
-                    />
-                    :
-                    <button className="btn btn-primary p-2">
-                        <Link to="/cart">
-                            Go cart
-                        </Link>
-                    </button>
+                        <ItemCount
+                            stock={detail.stock}
+                            initial={1}
+                            onAdd={onAdd}
+                        />
+                        :
+                        <button className="btn btn-primary p-2">
+                            <Link to="/cart">
+                                <HiShoppingCart style={{ color: 'black' }} size={'2em'} />
+                            </Link>
+                        </button>
                 }
             </aside>
         </div>

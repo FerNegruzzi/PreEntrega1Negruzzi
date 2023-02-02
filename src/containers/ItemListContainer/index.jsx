@@ -2,6 +2,10 @@ import React from 'react'
 import { useParams } from 'react-router-dom';
 import ItemList from '../../components/ItemList';
 import useFirebase from '../../hooks/useFirebase';
+// import { ImSpinner10 } from "react-icons/im";
+import {Spinner} from 'reactstrap';
+// import { useEffect } from 'react';
+// import saveFromJSONToFirebase from '../../firebase/services/saveFromJSONoFirestore';
 
 const ItemListContainer = () => {
 
@@ -9,14 +13,16 @@ const ItemListContainer = () => {
 
     const [products, loading, error] = useFirebase(categoryId)
 
-    console.log(products);
+    // useEffect(()=> {
+    //     saveFromJSONToFirebase()
+    // }, [])
 
     return (
         <>
         {error && <h1>Ups... Hubo un error: {error}</h1>}
         {
             loading ? 
-                <h1>Loading...</h1>
+                <Spinner style={{marginTop:'20em'}} size={'5em'}/>
                 : <ItemList productos={products}/>
         }
         </>

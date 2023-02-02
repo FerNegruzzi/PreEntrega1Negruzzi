@@ -5,7 +5,7 @@
         "price": 80.95,
         "description": "Your perfect deck to skate",
         "category": "skate table",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/skate_1.jpg"
     },
 
@@ -15,7 +15,7 @@
         "price": 78.95,
         "description": "Your perfect deck to skate",
         "category": "skate table",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/skate_2.jpg"
     },
     
@@ -26,7 +26,7 @@
         "price": 100.99,
         "description": "Your perfect ILLUMINATI deck to skate",
         "category": "skate table",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/skate_3.jpg"
     },
     
@@ -37,7 +37,7 @@
         "price": 82.75,
         "description": "Your perfect deck to skate",
         "category": "skate table",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/skate_4.jpg"
     },
     
@@ -48,7 +48,7 @@
         "price": 52.75,
         "description": "Your perfect truck to skate",
         "category": "trucks",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/trucks_1.jpg"
     },
 
@@ -59,7 +59,7 @@
         "price": 59.75,
         "description": "Your perfect truck to skate",
         "category": "trucks",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/trucks_2.jpg"
     },
 
@@ -70,7 +70,7 @@
         "price": 48.75,
         "description": "Your perfect truck to skate",
         "category": "trucks",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/trucks_3.jpg"
     },
 
@@ -81,7 +81,7 @@
         "price": 62.75,
         "description": "Your perfect truck to skate",
         "category": "trucks",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/trucks_4.jpg"
     },
 
@@ -92,7 +92,7 @@
         "price": 32.75,
         "description": "Your perfects wheels to skate",
         "category": "ruedas",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/rueda_1.jpg"
     },
 
@@ -103,7 +103,7 @@
         "price": 35.75,
         "description": "Your perfects wheels to skate",
         "category": "ruedas",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/rueda_2.jpg"
     },
 
@@ -114,7 +114,7 @@
         "price": 33.75,
         "description": "Your perfects wheels to skate",
         "category": "ruedas",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/rueda_3.jpg"
     },
 
@@ -125,7 +125,7 @@
         "price": 34.75,
         "description": "Your perfects wheels to skate",
         "category": "ruedas",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/rueda_4.jpg"
     },
 
@@ -136,7 +136,7 @@
         "price": 62.75,
         "description": "Beautiful jacket",
         "category": "indumentaria",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/buzo_1.jpg"
     },
 
@@ -147,7 +147,7 @@
         "price": 52.75,
         "description": "Beautiful jacket",
         "category": "indumentaria",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/buzo_2.jpg"
     },
 
@@ -158,7 +158,7 @@
         "price": 46.75,
         "description": "Beautiful jacket",
         "category": "indumentaria",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/buzo_3.jpg"
     },
 
@@ -169,7 +169,7 @@
         "price": 72.75,
         "description": "Beautiful jacket",
         "category": "indumentaria",
-        "stock": 4,
+        "stock": 88,
         "image": "/products_img/buzo_4.jpg"
     }
 

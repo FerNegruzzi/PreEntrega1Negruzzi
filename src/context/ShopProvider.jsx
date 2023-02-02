@@ -39,6 +39,15 @@ const ShopProvider = ({children}) => {
         return total;
     }
 
+    const totalForProduct = () => {
+        let totalFP = 0;
+        products.forEach(product => {
+            totalFP += product.quantity * products.price
+        })
+        return totalFP;
+
+    }
+
     const cleanCart = () => {
         setProducts([])
     }
@@ -49,7 +58,7 @@ const ShopProvider = ({children}) => {
     }
      
     return (
-        <Shop.Provider value = {{products, addProduct, countCart, total, cleanCart, removeProduct}}>
+        <Shop.Provider value = {{products, addProduct, countCart, total, cleanCart, removeProduct, totalForProduct}}>
             {children}
         </Shop.Provider>
     )
