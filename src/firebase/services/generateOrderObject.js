@@ -1,7 +1,7 @@
 
 const generateOrderObject = ({
     nombre = "", 
-    email = "", 
+    email1 = "", 
     telefono = "", 
     cart = [], 
     total = 0
@@ -9,7 +9,7 @@ const generateOrderObject = ({
     return {
         buyer: {
             nombre: nombre,
-            email: email,
+            email: email1,
             telefono: telefono,
         },
         items: cart
