@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import { ImHome } from "react-icons/im";
 import {Spinner} from 'reactstrap';
 import FormComp from '../../components/Form';
-// import { type } from '@testing-library/user-event/dist/type';
+import Swal from 'sweetalert2'
 
 const Cart = () => {
 
@@ -21,20 +21,21 @@ const Cart = () => {
 
 
   const confirmPurchase = async (data) => {
-    const {firstName: nombre, email, phone: telefono } = data
+    const {firstName: nombre, email1, phone: telefono } = data
 
     try {
       setLoader(true);
 
       const order = generateOrderObject({
         nombre,
-        email,
+        email1,
         telefono,
         cart: products,
         total: total()
       })
 
       console.log(order);
+      console.log("Datos a guardar en firebase: ",data)
       const docRef = await addDoc(collection(db, "orders"), order);
       cleanCart()
       for (const productCart of products) {
@@ -44,7 +45,12 @@ const Cart = () => {
         });
       }
 
-      alert("Orden confirmada con ID: " + docRef.id);
+      Swal.fire(
+        'Purchase confirmed! :)',
+        'Orden confirmada con ID: ' + docRef.id,
+        'success'
+      )
+
 
     } catch (error) {
       console.log(error);

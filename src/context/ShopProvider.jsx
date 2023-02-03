@@ -36,16 +36,7 @@ const ShopProvider = ({children}) => {
         for (const product of products) {
             total += product.price * product.quantity
         }
-        return total;
-    }
-
-    const totalForProduct = () => {
-        let totalFP = 0;
-        products.forEach(product => {
-            totalFP += product.quantity * products.price
-        })
-        return totalFP;
-
+        return Math.round(total);
     }
 
     const cleanCart = () => {
@@ -58,7 +49,7 @@ const ShopProvider = ({children}) => {
     }
      
     return (
-        <Shop.Provider value = {{products, addProduct, countCart, total, cleanCart, removeProduct, totalForProduct}}>
+        <Shop.Provider value = {{products, addProduct, countCart, total, cleanCart, removeProduct}}>
             {children}
         </Shop.Provider>
     )

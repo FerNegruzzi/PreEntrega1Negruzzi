@@ -15,9 +15,9 @@ const TableRow = ({ product }) => {
   return (
     <tr>
       <th scope="row">{product.id}</th>
-      <td><img src={product.image} alt="table-row" style={{ height: 150 }} /></td>
+      <td><img src={product.image} alt="table-row" style={{ height: 200 }} /></td>
       <td>{product.title}</td>
-      <td>${product.price * product.quantity}</td>
+      <td>${Math.round(product.price * product.quantity)}</td>
       <td>{product.quantity} units</td>
       <td><button onClick={() => removeProduct(product.id)}><ImBin/></button></td>
     </tr>
